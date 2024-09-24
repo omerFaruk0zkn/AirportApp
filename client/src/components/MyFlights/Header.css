@@ -1,0 +1,59 @@
+.header_container {
+  background-color: white;
+  height: 70px;
+  border-radius: 0 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.btns_container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.select_search {
+  border: none;
+  outline: none;
+  color: #5ba9dc;
+  font-weight: bold;
+}
+
+.stars_container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+
+.stars_item {
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.vertical_div {
+  height: 14px;
+  border: 1px solid lightgrey;
+}
+
+.star {
+  width: 10px;
+  height: 10px;
+}
+
+.header_container .home_link a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black  ;
+  font-weight: bold;
+}
+
+.home_link a:hover {
+  text-decoration: underline;
+}

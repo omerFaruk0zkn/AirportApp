@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 40px 30px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px 2px #afafaf;
+}
+
+.flight_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time_container {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.company_logo {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.time_text {
+  font-size: 20px;
+}
+
+.flight_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.flight_info_title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.flight_info_text {
+  font-size: 14px;
+  color: gray;
+}
+
+.flight_details {
+  border: none;
+  outline: none;
+  color: #5ba9dc;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.price_types {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  width: 45%;
+}
+
+.user_container {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user_container h5 {
+  font-size: 16px;
+  font-style: italic;
+}

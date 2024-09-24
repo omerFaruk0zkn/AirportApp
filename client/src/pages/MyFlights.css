@@ -1,0 +1,44 @@
+.myflights_container {
+  height: 100vh;
+  background-color: #0467e8;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  width: 97%;
+  height: 92.8vh;
+  overflow-y: scroll;
+  background-color: lightgrey;
+  border-radius: 0 10px 0 0;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.sort_fly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.select_commend {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.info_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.myflights_items {
+  padding: 0 50px;
+}
