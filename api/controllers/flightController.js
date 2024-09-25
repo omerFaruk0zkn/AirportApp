@@ -144,13 +144,14 @@ exports.getFlights = async function (req, res) {
             airportCode: "AMS", // İlk destinasyon kalkış havaalanı
             depCountry: (depCountry = "Hollanda"),
             scheduleDate: flight.scheduleDate,
-            scheduleTime: flight.scheduleTime.slice(0, 5),
+            scheduleTime: typeof flight.scheduleTime === "string" ? flight.scheduleTime.slice(0, 5) : "",
             terminal: flight.terminal,
           };
           arrival = {
             airportCode: destinations[destinations.length - 1], // Son destinasyon varış havaalanı
             arrCountry,
-            actualLandingTime: flight.actualLandingTime,
+            actualLandingDate: typeof flight.actualLandingTime === "string" ? flight.actualLandingTime.slice(0, 10) : "",
+            actualLandingTime: typeof flight.actualLandingTime === "string" ? flight.actualLandingTime.slice(11, 16) : "",
             terminal: flight.terminal,
           };
         } else if (flight.flightDirection === "A") {
@@ -159,14 +160,14 @@ exports.getFlights = async function (req, res) {
             airportCode: "AMS", // İlk destinasyon varış havaalanı
             arrCountry: (arrCountry = "Hollanda"),
             scheduleDate: flight.scheduleDate,
-            scheduleTime: flight.scheduleTime.slice(0, 5),
+            scheduleTime: typeof flight.scheduleTime === "string" ? flight.scheduleTime.slice(0, 5) : "",
             terminal: flight.terminal,
           };
           departure = {
             airportCode: destinations[destinations.length - 1], // Son destinasyon kalkış havaalanı
             depCountry,
-            actualLandingDate: flight.actualLandingTime.slice(0, 10),
-            actualLandingTime: flight.actualLandingTime.slice(11, 16),
+            actualLandingDate: typeof flight.actualLandingTime === "string" ? flight.actualLandingTime.slice(0, 10) : "",
+            actualLandingTime: typeof flight.actualLandingTime === "string" ? flight.actualLandingTime.slice(11, 16) : "",
             terminal: flight.terminal,
           };
         }
